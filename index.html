@@ -1,10 +1,111 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>My GitHub Pages Site</title>
-  </head>
-  <body>
-    <h1>Hello world!</h1>
-    <p>Welcome to my GitHub Pages site!</p>
-  </body>
-</html>
+<div id='main_bg_1'>
+  <div class=" container">
+  <!-- <% include ../partials/header %> -->
+  
+    
+      <div id='show_bg_2'>
+  
+       <!--  <% include ../partials/menu %>-->
+  
+          <div class="container" style="float:right; width:40%;">
+            <h3 style="color:rgb(255, 255, 255) ; opacity:100%">Welcome to my Website!</h3>
+            <p1 style="color:rgb(255, 255, 255)">Thank you for visiting! Please feel free to explore!</p1> 
+            <br><br><br>
+  
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <div class="jumbotron-fluid container bg-dark" style="width:80%">
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                  <div class = "card bg-info">
+                    <div class="card-body">
+                        <p2>"All models are wrong, but some are useful." ~ George Box</p2>
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class = "card bg-info">
+                    <div class="card-body">
+                        <p2>"Don't believe everything you read on the internet." ~ Abraham Lincoln</p2>
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class = "card bg-info">
+                    <div class="card-body">
+                      <p2>“In theory, there is no difference between practice and theory. In practice, there is.” ~ Yogi Berra</p2>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="item">
+                  <div class = "card bg-info">
+                    <div class="card-body">
+                      <p2>"There are 10 kinds of people in the world. Those who understand binary, and those who don't..."</p2>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="item">
+                  <div class = "card bg-info">
+                    <div class="card-body">
+                      <p2>"Did you know, 5 out of 4 people stuggle with math."</p2>
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- warpper div-->
+              
+              <!--L/R Arrows -->
+              <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div> <!-- carousel div-->
+          </div> <!--Textbox div-->	
+  
+      </div>
+    </div>
+  
+  
+   <!--  <% /* %> Commented Out section-->
+  
+    <div class="jumbotron container">
+      <input type="text" class="form-control" id="searchTerm" name = "search_term">
+      <input type="submit" value="Submit" class="btn btn-primary btn-block" onClick="makeApiCall()">		
+    </div>
+  <br><br><br>
+    <div class="jumbotron" id='movieDiv' style="display:none">
+    </div>
+  
+  
+    <!-- Modal HTML -->
+    <div id="reviewModal" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <h4 class="modal-title">  Add Review </h4>
+          <div class="modal-body">
+          <form action="/add/reviews" method="get">
+              <label for="title">Movie review for:</label>
+              <input type="text" class="form-control" id="title" placeholder="Movie Name" readonly value="" name="title">
+              <label for="review">Your Review</label>
+              <input type="text" class="form-control" placeholder="What are your thoughts" id = "review" name="title">				
+            <button id="submit_button" type="submit" class="btn btn-primary" value="Submit" >Submit</button>
+  
+          </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!--Modal HTML end-->
+  <!--<% */ %> -->
+  
+  </div>
+  <!-- <% include ../partials/footer %> -->
